@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <random>
+#include <functional>
 #include <chrono>
 
 namespace benchmark {
@@ -36,7 +37,20 @@ namespace benchmark {
 		
 		return elapsed.count();
 	}
+		
+	template<typename Func, typename Container>
+	void benchmark_time(Func func, Container data)
+	{
+		auto start = std::chrono::high_resolution_clock::now();
+		func(data.begin(), data.end());
+		auto end = std::chrono::high_resolution_clock::now();
+
+		std::chrono::duration<double, std::milli> elapsed = end - start;
+		std::cout << " took" << elapsed.count() << " ms\n";
+	}
 	
+	
+
 		
 }
 

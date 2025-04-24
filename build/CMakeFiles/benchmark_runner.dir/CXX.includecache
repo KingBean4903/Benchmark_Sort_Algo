@@ -11,7 +11,27 @@ vector
 -
 random
 -
+functional
+-
 chrono
+-
+
+../include/for_each.hpp
+join_threads.hpp
+../include/join_threads.hpp
+iterator
+-
+future
+-
+algorithm
+-
+utility
+-
+
+../include/join_threads.hpp
+thread
+-
+vector
 -
 
 /home/baimungi/Documents/C_STUDIES/Benchmarking_Sort_Algorithm/src/benchmark_runner.cpp
@@ -19,4 +39,8 @@ iostream
 -
 benchmark_util.hpp
 /home/baimungi/Documents/C_STUDIES/Benchmarking_Sort_Algorithm/src/benchmark_util.hpp
+for_each.hpp
+/home/baimungi/Documents/C_STUDIES/Benchmarking_Sort_Algorithm/src/for_each.hpp
+type_traits
+-
 
